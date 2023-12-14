@@ -257,6 +257,19 @@ const issue = {
   },
 };
 
+export const assignedIssue = {
+  ...issue,
+  key: "assignedIssue",
+  display: {
+    label: "Assigned Issue",
+    description: "Triggers when you're assigned an issue.",
+  },
+  operation: {
+    ...issue.operation,
+    canPaginate: true,
+  },
+};
+
 export const newIssue = {
   ...issue,
   key: "newIssue",
